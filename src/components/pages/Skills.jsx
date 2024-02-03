@@ -25,7 +25,6 @@ export const Skills = () => {
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 2,
-
     },
   };
 
@@ -35,17 +34,28 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx3 wow zoomIn">
-              <h2>Skills</h2>
-              <p>
-              Under the ‘Skills’ section, you’ll find a comprehensive list of my technical proficiencies. <br />This includes a wide range of programming languages, frameworks, and tools.
+              <h2
+                id="any"
+                data-aos="zoom-in-down"
+                data-aos-duration="1000"
+                data-aos-easing="linear"
+              >
+                Skills
+              </h2>
+              <p data-aos="fade-up" data-aos-duration="1000">
+                Under the ‘Skills’ section, you’ll find a comprehensive list of
+                my technical proficiencies. <br />
+                This includes a wide range of programming languages, frameworks,
+                and tools.
               </p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
                 className="owl-carousel owl-theme skill-slider"
-                
-  autoPlay={true}
-  autoPlaySpeed={2000}
+                autoPlay={true}
+                autoPlaySpeed={2000}
+                data-aos="fade-left"
+                data-aos-duration="1000"
               >
                 <div className="item">
                   <img src={meter1} alt="Image" />

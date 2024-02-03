@@ -7,6 +7,7 @@ import Project from './components/Project.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Footer } from './components/Footer.jsx';
 import Design from '../Design.jsx';
+import 'animate.css';
 export default function App() {
   return (
     <BrowserRouter>

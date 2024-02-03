@@ -58,31 +58,40 @@ const sendmail = () => {
 
   return (
     <>
-      <Container id="contact" fluid className="pt-1 ">
+      <Container id="contact" fluid className="pt-5 ">
         <Container>
-        <Card
-          style={{
-            border: "none",
-            backgroundColor: "transparent",
-            paddingLeft: "10px",
-            paddingRight: "50px",
-          }}
-        >
-          <Card.Body
-            data-aos="slide-right"
-            style={{ borderBottom: "2px solid #DCDCDC", paddingBottom: "10px" }}
-          >
-            <span
-              style={{
-                fontWeight: "700",
-                color: "white",
-                fontSize: "3rem",
-              }}
-            >
-              Get In Touch
-            </span>
-          </Card.Body>
-        </Card>
+        <Col xs={12} sm={12} style={{ backgroundColor: "" }}>
+              <Container className=" pb-0 mb-0" fluid style={{display:"flex",justifyContent:"center"}}>
+              <span style={{
+                  backgroundColor: "",
+                  color: "#ffc107",
+                  border: "none",
+                  fontWeight: "400",
+                  fontSize: "2rem",
+                  textAlign:"center",
+                  
+                 
+                }}data-aos="fade-down" data-aos-duration="1000">Get in Touch</span>
+              </Container>
+                
+              <Container className="pt-0 mt-0" fluid style={{display:"flex",justifyContent:"center"}}>
+              <span
+                style={{
+                  backgroundColor: "",
+                  color: "white",
+                  border: "none",
+                  fontWeight: "700",
+                  fontSize: "3rem",
+                  textAlign:"center"
+                }}
+                id="any"
+                data-aos="slide-up" data-aos-duration="1000"
+              >
+                
+                Connect with Me with <br /> Confidence
+              </span>
+              </Container>
+            </Col>
 
         <Container fluid className="py-5">
           <Row>
@@ -91,7 +100,7 @@ const sendmail = () => {
               
 
               
-            <Form style={{display:"flex",flexDirection:"column"}}>
+            <Form data-aos="slide-right" data-aos-duration="1000" style={{display:"flex",flexDirection:"column"}}>
                 <Form.Group className="mb-3">
                   <Form.Label>Name</Form.Label>
                   <Form.Control
@@ -158,12 +167,14 @@ const sendmail = () => {
            
             </Col>
 
-            <Col xs={12} sm={6}>
+            <Col xs={12} sm={6} >
               <Image
-                data-aos="zoom-in"
-                data-aos-duration="2000"
+                data-aos="zoom-out-left"
+                data-aos-duration="1000"
                 src={img}
                 fluid
+                id="float"
+                
               />
             </Col>
 
@@ -171,7 +182,7 @@ const sendmail = () => {
             <Col xs={12} className="pt-5" id="onlyphone">
               
               
-                 <Form style={{display:"flex",flexDirection:"column"}}>
+                 <Form data-aos="slide-up" data-aos-duration="1000" style={{display:"flex",flexDirection:"column"}}>
                 <Form.Group className="mb-3">
                   <Form.Label>Name</Form.Label>
                   <Form.Control

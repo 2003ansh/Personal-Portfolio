@@ -22,26 +22,28 @@ export default function Contact1(props) {
     sendmail();
   };
 
-const sendmail = () => {
-  var params = {
-    from_name: name,
-    from_number: number,
-    email_id: email,
-    message: message,
-    
-  }
-  emailjs.send("service_i72pbvm","template_j9b39pg", params).then(function (response) {
-    console.log('SUCCESS!', response.status, response.text);
-    setSpinner(false);
-    setEmail("");
-    setName("");
-    setNumber("");
-    setMessage("");
-    alert("Your message has been sent successfully");
-  }, function (error) {
-    console.log('FAILED...', error);
-  });
-}
+  const sendmail = () => {
+    var params = {
+      from_name: name,
+      from_number: number,
+      email_id: email,
+      message: message,
+    };
+    emailjs.send("service_i72pbvm", "template_j9b39pg", params).then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+        setSpinner(false);
+        setEmail("");
+        setName("");
+        setNumber("");
+        setMessage("");
+        alert("Your message has been sent successfully");
+      },
+      function (error) {
+        console.log("FAILED...", error);
+      }
+    );
+  };
 
   const handlechange = (e) => {
     // console.log(e.target.name);
@@ -60,16 +62,11 @@ const sendmail = () => {
     <>
       <Container id="contact" fluid className="pt-0 ">
         <Container>
-        
-
-        <Container fluid className="py-0">
-          <Row>
-            {/* only laptop */}
-            <Col sm={12} className=" px-0" id="onlylap">
-              
-
-              
-                <Form style={{display:"flex",flexDirection:"column"}}>
+          <Container fluid className="py-0">
+            <Row>
+              {/* only laptop */}
+              <Col sm={12} className=" px-0" id="onlylap">
+                <Form data-aos="slide-right" data-aos-duration="1000" style={{ display: "flex", flexDirection: "column" }}>
                   <Form.Group className="mb-3">
                     <Form.Label>Name</Form.Label>
                     <Form.Control
@@ -78,38 +75,62 @@ const sendmail = () => {
                       value={name}
                       onChange={handlechange}
                       placeholder="Type Your name"
-                      style={{backgroundColor:"transparent",color:"white",height:"70px",borderRadius:"30px",border:"3px solid #49273f"}}
-                    />
-                  </Form.Group>
-
-                  <Form.Group className="mb-3" style={{display:"flex",flexDirection:"row", gap:"20px"}}>
-
-                  <Form.Group className="mb-0">
-                    <Form.Label>Phone Number</Form.Label>
-                    <Form.Control
-                      type="number"
-                      name="number"
-                      value={number}
-                      onChange={handlechange}
-                      placeholder="Type Your number"
-                      style={{backgroundColor:"transparent",height:"70px" ,borderRadius:"30px",border:"3px solid #49273f",color:"white"}}
+                      style={{
+                        backgroundColor: "transparent",
+                        color: "white",
+                        height: "70px",
+                        borderRadius: "30px",
+                        border: "3px solid #49273f",
+                      }}
                     />
                   </Form.Group>
 
                   <Form.Group
-                    className="mb-0"
-                    controlId="exampleForm.ControlInput1" >
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control
-                      type="email"
-                      name="email"
-                      value={email}
-                      onChange={handlechange}
-                      placeholder="name@example.com"
-                      style={{backgroundColor:"transparent",color:"white",height:"70px", borderRadius:"30px",border:"3px solid #49273f"}}
-                    />
-                  </Form.Group>
+                    className="mb-3"
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      gap: "20px",
+                    }}
+                  >
+                    <Form.Group className="mb-0">
+                      <Form.Label>Phone Number</Form.Label>
+                      <Form.Control
+                        type="number"
+                        name="number"
+                        value={number}
+                        onChange={handlechange}
+                        placeholder="Type Your number"
+                        style={{
+                          backgroundColor: "transparent",
+                          height: "70px",
+                          borderRadius: "30px",
+                          border: "3px solid #49273f",
+                          color: "white",
+                        }}
+                      />
+                    </Form.Group>
 
+                    <Form.Group
+                      className="mb-0"
+                      controlId="exampleForm.ControlInput1"
+                    >
+                      <Form.Label>Email address</Form.Label>
+                      <Form.Control
+                        type="email"
+                        name="email"
+                        value={email}
+                        onChange={handlechange}
+                        placeholder="name@example.com"
+                        style={{
+                          backgroundColor: "transparent",
+                          color: "white",
+                          height: "70px",
+                          borderRadius: "30px",
+                          border: "3px solid #49273f",
+                        }}
+                      />
+                    </Form.Group>
                   </Form.Group>
 
                   <Form.Group
@@ -124,64 +145,90 @@ const sendmail = () => {
                       onChange={handlechange}
                       placeholder="Type your message here..."
                       rows={5}
-                      style={{backgroundColor:"transparent",color:"white",borderRadius:"30px",border:"3px solid #49273f"}}
+                      style={{
+                        backgroundColor: "transparent",
+                        color: "white",
+                        borderRadius: "30px",
+                        border: "3px solid #49273f",
+                      }}
                     />
                   </Form.Group>
 
-
-                  <Button variant="outline-warning"  onClick={submitForm}>
-                    {spinner&&<Spinner animation="border" size="sm"></Spinner>} Submit
+                  <Button variant="outline-warning" onClick={submitForm}>
+                    {spinner && (
+                      <Spinner animation="border" size="sm"></Spinner>
+                    )}{" "}
+                    Submit
                   </Button>
                 </Form>
-           
-            </Col>
-
-            
-
-            {/* only phone */}
-            {/* <Col xs={12} className="pt-5" id="onlyphone">
-              
-              <Card
-                className="p-3"
-                style={
-                  props.mode === "dark"
-                    ? {
-                        backgroundColor: "transparent",
-                        color: "#989082",
-                        border: "2px solid #ffc107",
-                        boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
-                      }
-                    : {
-                        backgroundColor: "transparent",
-                        color: "black",
-                        border: "2px solid #039ba2",
-                        boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
-                      }
-                }
-              >
-                <Form>
+              </Col>
+              {/* only phone */}
+              <Col sm={12} className=" px-0 pb-4" id="onlyphone">
+                <Form data-aos="slide-right" data-aos-duration="1000" style={{ display: "flex", flexDirection: "column" }}>
                   <Form.Group className="mb-3">
                     <Form.Label>Name</Form.Label>
-                    <Form.Control type="Name" placeholder="Type Your name" 
-                    style={{backgroundColor:"transparent",height:"50px"}}/>
-                  </Form.Group>
-
-                  <Form.Group className="mb-3">
-                    <Form.Label>Phone Number</Form.Label>
                     <Form.Control
-                      type="Number"
-                      placeholder="Type your phone number"
-                      style={{backgroundColor:"transparent",height:"50px"}}
+                      type="name"
+                      name="name"
+                      value={name}
+                      onChange={handlechange}
+                      placeholder="Type Your name"
+                      style={{
+                        backgroundColor: "transparent",
+                        color: "black",
+                        height: "70px",
+                        borderRadius: "30px",
+                        border: "3px solid #49273f",
+                      }}
                     />
                   </Form.Group>
 
                   <Form.Group
                     className="mb-3"
-                    controlId="exampleForm.ControlInput1"
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      gap: "20px",
+                    }}
                   >
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="name@example.com" 
-                    style={{backgroundColor:"transparent",height:"50px"}}/>
+                    <Form.Group className="mb-0">
+                      <Form.Label>Phone Number</Form.Label>
+                      <Form.Control
+                        type="number"
+                        name="number"
+                        value={number}
+                        onChange={handlechange}
+                        placeholder="Type Your number"
+                        style={{
+                          backgroundColor: "transparent",
+                          height: "70px",
+                          borderRadius: "30px",
+                          border: "3px solid #49273f",
+                          color: "white",
+                        }}
+                      />
+                    </Form.Group>
+
+                    <Form.Group
+                      className="mb-0"
+                      controlId="exampleForm.ControlInput1"
+                    >
+                      <Form.Label>Email address</Form.Label>
+                      <Form.Control
+                        type="email"
+                        name="email"
+                        value={email}
+                        onChange={handlechange}
+                        placeholder="name@example.com"
+                        style={{
+                          backgroundColor: "transparent",
+                          color: "white",
+                          height: "70px",
+                          borderRadius: "30px",
+                          border: "3px solid #49273f",
+                        }}
+                      />
+                    </Form.Group>
                   </Form.Group>
 
                   <Form.Group
@@ -189,89 +236,34 @@ const sendmail = () => {
                     controlId="exampleForm.ControlTextarea1"
                   >
                     <Form.Label>Comments</Form.Label>
-                    <Form.Control as="textarea" placeholder="Type your message here..." rows={3} 
-                    style={{backgroundColor:"transparent",height:"50px"}}/>
+                    <Form.Control
+                      as="textarea"
+                      name="message"
+                      value={message}
+                      onChange={handlechange}
+                      placeholder="Type your message here..."
+                      rows={5}
+                      style={{
+                        backgroundColor: "transparent",
+                        color: "white",
+                        borderRadius: "30px",
+                        border: "3px solid #49273f",
+                      }}
+                    />
                   </Form.Group>
-                  <Button variant="outline-warning">Submit</Button>
+
+                  <Button variant="outline-warning" onClick={submitForm}>
+                    {spinner && (
+                      <Spinner animation="border" size="sm"></Spinner>
+                    )}{" "}
+                    Submit
+                  </Button>
                 </Form>
-              </Card>
-            </Col> */}
-            <Col sm={12} className=" px-0 pb-4" id="onlyphone">
-              
-
-              
-              <Form style={{display:"flex",flexDirection:"column"}}>
-                <Form.Group className="mb-3">
-                  <Form.Label>Name</Form.Label>
-                  <Form.Control
-                    type="name"
-                    name="name"
-                    value={name}
-                    onChange={handlechange}
-                    placeholder="Type Your name"
-                    style={{backgroundColor:"transparent",color:"black",height:"70px",borderRadius:"30px",border:"3px solid #49273f"}}
-                  />
-                </Form.Group>
-
-                <Form.Group className="mb-3" style={{display:"flex",flexDirection:"row", gap:"20px"}}>
-
-                <Form.Group className="mb-0">
-                  <Form.Label>Phone Number</Form.Label>
-                  <Form.Control
-                    type="number"
-                    name="number"
-                    value={number}
-                    onChange={handlechange}
-                    placeholder="Type Your number"
-                    style={{backgroundColor:"transparent",height:"70px" ,borderRadius:"30px",border:"3px solid #49273f",color:"white"}}
-                  />
-                </Form.Group>
-
-                <Form.Group
-                  className="mb-0"
-                  controlId="exampleForm.ControlInput1" >
-                  <Form.Label>Email address</Form.Label>
-                  <Form.Control
-                    type="email"
-                    name="email"
-                    value={email}
-                    onChange={handlechange}
-                    placeholder="name@example.com"
-                    style={{backgroundColor:"transparent",color:"white",height:"70px", borderRadius:"30px",border:"3px solid #49273f"}}
-                  />
-                </Form.Group>
-
-                </Form.Group>
-
-                <Form.Group
-                  className="mb-3"
-                  controlId="exampleForm.ControlTextarea1"
-                >
-                  <Form.Label>Comments</Form.Label>
-                  <Form.Control
-                    as="textarea"
-                    name="message"
-                    value={message}
-                    onChange={handlechange}
-                    placeholder="Type your message here..."
-                    rows={5}
-                    style={{backgroundColor:"transparent",color:"white",borderRadius:"30px",border:"3px solid #49273f"}}
-                  />
-                </Form.Group>
-
-
-                <Button variant="outline-warning"  onClick={submitForm}>
-                  {spinner&&<Spinner animation="border" size="sm"></Spinner>} Submit
-                </Button>
-              </Form>
-         
-          </Col>
-          </Row>
-        </Container>
+              </Col>
+            </Row>
+          </Container>
         </Container>
       </Container>
-
-    
     </>
   );
 }

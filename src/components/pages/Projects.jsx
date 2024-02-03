@@ -54,12 +54,9 @@ export default function Projects() {
               <TrackVisibility>
                 {({ isVisible }) => (
                   <div
-                    className={
-                      isVisible ? "animate__animated animate__fadeIn" : ""
-                    }
                   >
-                    <h2>Experience</h2>
-                    <p style={{ textAlign: "left" }}>
+                    <h2 data-aos="zoom-in" daya-aos-duration="1000" id="any">Experience</h2>
+                    <p data-aos="slide-up" daya-aos-duration="1000"  style={{ textAlign: "left" }}>
                       In the ‘Experience’ section, you’ll find a detailed
                       account of my professional journey as a Full-Stack Web
                       Developer. This section showcases my ability to apply
@@ -84,11 +81,7 @@ export default function Projects() {
                       </Nav>
                       <Tab.Content
                         id="slideInUp"
-                        className={
-                          isVisible
-                            ? "animate__animated animate__slideInUp"
-                            : ""
-                        }
+                        
                       >
                         <Tab.Pane eventKey="first">
                           <Row>
@@ -111,7 +104,9 @@ export default function Projects() {
                                       display: "flex",
                                       justifyContent: "center",
                                       alignItems: "center",
+                                    
                                     }}
+                                    id="float"
                                   >
                                     <h3>
                                       Click to <br /> know more{" "}
@@ -130,7 +125,8 @@ export default function Projects() {
                                 <img src={intern1} />
                                 <div className="proj-txtx">
                                   <h4>Web Developer Intern</h4>
-                                  <span>At-Axxin Diagnostics</span>
+                                  <span>At-Axxin Diagnostics</span> <br />
+                                  <span>1st May 2023 - 31st August 2023</span>
                                 </div>
                               </div>
                             </Col>
@@ -138,11 +134,7 @@ export default function Projects() {
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
                           <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Cumque quam, quod neque provident velit, rem
-                            explicabo excepturi id illo molestiae blanditiis,
-                            eligendi dicta officiis asperiores delectus quasi
-                            inventore debitis quo.
+                           Coming soon...
                           </p>
                         </Tab.Pane>
                       </Tab.Content>

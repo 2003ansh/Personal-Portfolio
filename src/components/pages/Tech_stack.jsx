@@ -23,6 +23,8 @@ import node from "../../assets/img/node.png"
 import python from "../../assets/img/python.gif"
 import react from "../../assets/img/react.gif"
 import bootstrap from "../../assets/img/bootsrap.png"
+import nextui from "../../assets/img/nextui.png"
+import mui from "../../assets/img/mui.png"
 import colorSharp from "../../assets/img/color-sharp.png";
 import { Col, Row } from "react-bootstrap";
 
@@ -35,45 +37,45 @@ export const Tech_stack = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx2 wow zoomIn">
-              <h2>Tech Stack</h2>
-              <p>
+              <h2 id="any" data-aos="zoom-in-up" data-aos-duration="1000" >Tech Stack</h2>
+              <p data-aos="zoom-in-down"  data-aos-duration="1000">
               In the ‘Tech Stack’ section, you’ll discover the diverse range of technologies I’ve mastered as a <br /> Full-Stack Web Developer.  This includes various programming languages, frameworks, and tools that I’ve utilized in my projects.
               </p>
               <div className="col-12" style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
             <Row style={{display:"flex",justifyContent:"center"}}>
                
                     <Col xs={6} md={2} className="mb-0 dis">
-                    <div className="skill-bx2 wow zoomIn item item1">
+                    <div data-aos="zoom-in" data-aos-duration="1000" className="skill-bx2 wow zoomIn item item1">
                         <img src={c} alt="meter1" className="hov" />
                         <h5>C</h5>
                     </div>
                     </Col>
                     <Col xs={6} md={2} className="mb-0 dis">
-                    <div className="skill-bx2 wow zoomIn item item1">
+                    <div className="skill-bx2 wow zoomIn item item1" data-aos="zoom-in-down" data-aos-duration="1000">
                         <img src={java} alt="meter2" />
                         <h5>Java</h5>
                         </div>
                     </Col>
                     <Col xs={6} md={2} className="mb-0 dis">
-                    <div className="skill-bx2 wow zoomIn item item1">
+                    <div className="skill-bx2 wow zoomIn item item1" data-aos="zoom-in-down" data-aos-duration="1000">
                         <img src={javascript} alt="meter1" />
                         <h5>Javascript</h5>
                         
                     </div>
                     </Col>
                     <Col xs={6} md={2} className="mb-0 dis">
-                    <div className="skill-bx2 wow zoomIn item item1">
+                    <div className="skill-bx2 wow zoomIn item item1" data-aos="zoom-in-down" data-aos-duration="1000">
                         <img src={python} alt="meter1" />
                         <h5>Python</h5>
                         
                     </div>
                     </Col>
                     <Col xs={6} md={2} className="mb-0 dis">
-                    <div className="skill-bx2 wow zoomIn item item1">
+                    <div className="skill-bx2 wow zoomIn item item1" data-aos="zoom-in-down" data-aos-duration="1000">
                         <img src={html} alt="meter1" />
                         <h5>Html</h5>
                         
-                    </div>
+                    </div> 
                     </Col>
                     
                     
@@ -82,35 +84,35 @@ export const Tech_stack = () => {
 
             <Row style={{display:"flex",justifyContent:"center"}}>
                     <Col   xs={6} md={2} className="mb-0 dis">
-                    <div className="skill-bx2 wow zoomIn item item1">
+                    <div className="skill-bx2 wow zoomIn item item1" data-aos="zoom-in-down" data-aos-duration="1000">
                         <img src={css} alt="meter1" className="hov" />
                         <h5>Vanilla CSS</h5>
                     </div>
                     </Col>
                     <Col  xs={6} md={2} className="mb-0 dis">
-                    <div className="skill-bx2 wow zoomIn item item1">
+                    <div className="skill-bx2 wow zoomIn item item1" data-aos="zoom-in-down" data-aos-duration="1000">
                         <img src={tailwind} alt="meter1" />
                         <h5>Tailwind CSS</h5>
                         
                     </div>
                     </Col>
                     <Col  xs={6} md={2} className="mb-0 dis">
-                    <div className="skill-bx2 wow zoomIn item item1">
-                        <img src={meter1} alt="meter1" />
+                    <div className="skill-bx2 wow zoomIn item item1" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <img src={mui} alt="meter1" />
                         <h5>Material UI</h5>
                         
                     </div>
                     </Col>
                     <Col  xs={6} md={2} className="mb-0 dis">
-                    <div className="skill-bx2 wow zoomIn item item1">
+                    <div className="skill-bx2 wow zoomIn item item1" data-aos="zoom-in-down" data-aos-duration="1000">
                         <img src={bootstrap} alt="meter1" />
                         <h5>Bootstrap</h5>
                         
                     </div>
                     </Col>                    
                     <Col  xs={6} md={2} className="mb-0 dis">
-                    <div className="skill-bx2 wow zoomIn item item1">
-                        <img src={meter1} alt="meter1" />
+                    <div className="skill-bx2 wow zoomIn item item1" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <img src={nextui} alt="meter1" />
                         <h5>Next UI</h5>
                         
                     </div>
@@ -121,35 +123,35 @@ export const Tech_stack = () => {
             <Row style={{display:"flex",justifyContent:"center"}}>
                 
                     <Col xs={6} md={2} className="mb-0 dis">
-                    <div className="skill-bx2 wow zoomIn item item1">
+                    <div className="skill-bx2 wow zoomIn item item1" data-aos="zoom-in-down" data-aos-duration="1000">
                         <img src={react} alt="meter1" />
                         <h5>React</h5>
                         
                     </div>
                     </Col>
                     <Col xs={6} md={2} className="mb-0 dis">
-                    <div className="skill-bx2 wow zoomIn item item1">
+                    <div className="skill-bx2 wow zoomIn item item1" data-aos="zoom-in-down" data-aos-duration="1000">
                         <img src={node} alt="meter1" />
                         <h5>Node.js</h5>
                         
                     </div>
                     </Col>
                     <Col xs={6} md={2} className="mb-0 dis">
-                    <div className="skill-bx2 wow zoomIn item item1">
+                    <div className="skill-bx2 wow zoomIn item item1" data-aos="zoom-in-down" data-aos-duration="1000">
                         <img src={express} alt="meter1" />
                         <h5>Express.js</h5>
                         
                     </div>
                     </Col>
                     <Col xs={6} md={2} className="mb-0 dis">
-                    <div className="skill-bx2 wow zoomIn item item1">
+                    <div className="skill-bx2 wow zoomIn item item1" data-aos="zoom-in-down" data-aos-duration="1000">
                         <img src={mongo} alt="meter1" />
                         <h5>MongoDB</h5>
                         
                     </div>
                     </Col>
                     <Col xs={6} md={2} className="mb-0 dis">
-                    <div className="skill-bx2 wow zoomIn item item1">
+                    <div className="skill-bx2 wow zoomIn item item1" data-aos="zoom-in-down" data-aos-duration="1000">
                         <img src={github} alt="meter1" className="hov" />
                         <h5>Git & GitHub</h5>
                     </div>
@@ -159,32 +161,32 @@ export const Tech_stack = () => {
             <Row style={{display:"flex",justifyContent:"center"}}>
                 
                     <Col xs={6} md={2} className="mb-0 dis">
-                    <div className="skill-bx2 wow zoomIn item item1">
+                    <div className="skill-bx2 wow zoomIn item item1" data-aos="zoom-in-down" data-aos-duration="1000">
                         <img src={mysql} alt="meter2" />
                         <h5>MYSQL</h5>
                         </div>
                     </Col>
                     <Col xs={6} md={2} className="mb-0 dis">
-                    <div className="skill-bx2 wow zoomIn item item1">
+                    <div className="skill-bx2 wow zoomIn item item1" data-aos="zoom-in-down" data-aos-duration="1000">
                         <img src={firebase} alt="meter1" />
                         <h5>Firebse</h5>
                         
                     </div>
                     </Col>
                     <Col xs={6} md={2} className="mb-0 dis">
-                    <div className="skill-bx2 wow zoomIn item item1">
+                    <div className="skill-bx2 wow zoomIn item item1" data-aos="zoom-in-down" data-aos-duration="1000">
                         <img src={canva} alt="meter1" className="hov" />
                         <h5>Canva</h5>
                     </div>
                     </Col>
                     <Col xs={6} md={2} className="mb-0 dis">
-                    <div className="skill-bx2 wow zoomIn item item1">
+                    <div className="skill-bx2 wow zoomIn item item1" data-aos="zoom-in-down" data-aos-duration="1000">
                         <img src={figma} alt="meter1" className="hov" />
                         <h5>Figma</h5>
                     </div>
                     </Col>
                     <Col xs={6} md={2} className="mb-0 dis">
-                    <div className="skill-bx2 wow zoomIn item item1">
+                    <div className="skill-bx2 wow zoomIn item item1" data-aos="zoom-in-down" data-aos-duration="1000">
                         <img src={adobe} alt="meter1" />
                         <h5>Adobe XD</h5>
                         

@@ -18,7 +18,7 @@ import cour from "../assets/img/cour.gif";
 import hob from "../assets/img/hob.png";
 import ring from "../assets/img/ring.gif";
 import email from "../assets/img/email.gif";
-import linkdien from "../assets/img/linkdien.gif"
+import linkdien from "../assets/img/linkdien.gif";
 import { HiMinus } from "react-icons/hi";
 import ListGroup from "react-bootstrap/ListGroup";
 export default function About() {
@@ -46,7 +46,6 @@ export default function About() {
     document.body.removeChild(link);
   };
 
- 
   return (
     <>
       <Container fluid className="pt-5 about">
@@ -75,10 +74,12 @@ export default function About() {
                       fontSize: "3rem",
                     }}
                     id="laptop"
+                    data-aos="slide-right"
+                    data-aos-duration="1000"
                   >
                     My Resume
                   </span>
-                  
+
                   <span
                     style={{
                       fontWeight: "700",
@@ -86,7 +87,9 @@ export default function About() {
                       fontSize: "2.8rem",
                     }}
                     id="phone"
-                    className="mt-4"
+                    className="mt-0"
+                    data-aos="slide-right"
+                    data-aos-duration="1000"
                   >
                     <br />
                     My Resume
@@ -104,6 +107,7 @@ export default function About() {
               >
                 <Card.Body
                   data-aos="slide-right"
+                  data-aos-duration="1000"
                   style={{ paddingBottom: "10px" }}
                 >
                   <span
@@ -128,7 +132,6 @@ export default function About() {
                   color: "white",
                   fontWeight: "700",
                   transform: "translateX(20px)",
-
                 }}
                 onClick={handleDownload}
               >
@@ -137,7 +140,7 @@ export default function About() {
               <br />
               <Col xs={12} sm={3} id="phone" style={{ objectFit: "cover" }}>
                 <br />
-                <Image src={anshuman} roundedCircle />
+                <Image id="float" src={anshuman} roundedCircle data-aos="zoom-in" data-aos-duration="2000" />
               </Col>
               <Row>
                 <Col xs={12} sm={6} style={{ backgroundColor: "transparent" }}>
@@ -150,6 +153,7 @@ export default function About() {
                         fontSize: "2.5rem",
                         border: "none",
                       }}
+                      data-aos="slide-down" data-aos-duration="1000"
                     >
                       <HiMinus style={{ fontSize: "2rem" }} />
                       Education
@@ -163,9 +167,10 @@ export default function About() {
                         color: "white",
                         border: "none",
                       }}
+                      data-aos="slide-up" data-aos-duration="1000"
                     >
                       {" "}
-                      <Badge bg="white" square>
+                      <Badge bg="white" square="true">
                         <img
                           style={{ width: "30px", height: "30px" }}
                           src={edu}
@@ -174,9 +179,11 @@ export default function About() {
                       </Badge>
                       <div className="ms-2 me-auto">
                         <div className="fw-bold">BACHELOR OF TECHNOLOGY</div>
-                        <span style={{fontSize:"0.9rem", color:"grey"}}>Silicon Institute of Technology,
-                        <br />
-                        At-Bhubaneswar,Patia,Odisha</span>
+                        <span style={{ fontSize: "0.9rem", color: "grey" }}>
+                          Silicon Institute of Technology,
+                          <br />
+                          At-Bhubaneswar,Patia,Odisha
+                        </span>
                       </div>
                       <span> 2021-2025</span>
                     </ListGroup.Item>
@@ -189,8 +196,9 @@ export default function About() {
                         color: "white",
                         border: "none",
                       }}
+                      data-aos="slide-up" data-aos-duration="1000"
                     >
-                      <Badge bg="white" square>
+                      <Badge bg="white" square="true">
                         <img
                           style={{ width: "30px", height: "30px" }}
                           src={edu}
@@ -199,9 +207,10 @@ export default function About() {
                       </Badge>
                       <div className="ms-2 me-auto">
                         <div className="fw-bold">HIGHER SECONDARY SCHOOL</div>
-                        <span style={{fontSize:"0.9rem", color:"grey"}}>LR DAV Public School <br />
-                        At-Cuttack,Odisha</span>
-                        
+                        <span style={{ fontSize: "0.9rem", color: "grey" }}>
+                          LR DAV Public School <br />
+                          At-Cuttack,Odisha
+                        </span>
                       </div>
                       <span>2019-2021</span>
                     </ListGroup.Item>
@@ -214,8 +223,9 @@ export default function About() {
                         color: "white",
                         border: "none",
                       }}
+                      data-aos="slide-up" data-aos-duration="1000"
                     >
-                      <Badge bg="white" square>
+                      <Badge bg="white" square="true">
                         <img
                           style={{ width: "30px", height: "30px" }}
                           src={edu}
@@ -224,9 +234,10 @@ export default function About() {
                       </Badge>
                       <div className="ms-2 me-auto">
                         <div className="fw-bold">SECONDARY SCHOOL</div>
-                        <span style={{fontSize:"0.9rem", color:"grey"}}>SRI SATHYA SAI SCHOOL <br />
-                        At-Cuttack,Odisha</span>
-                        
+                        <span style={{ fontSize: "0.9rem", color: "grey" }}>
+                          SRI SATHYA SAI SCHOOL <br />
+                          At-Cuttack,Odisha
+                        </span>
                       </div>
                       <span>2007-2019</span>
                     </ListGroup.Item>
@@ -243,6 +254,7 @@ export default function About() {
                         fontWeight: "700",
                         fontSize: "2.5rem",
                       }}
+                      data-aos="slide-down" data-aos-duration="1000"
                     >
                       <HiMinus style={{ fontSize: "2rem" }} />
                       Experience
@@ -255,9 +267,10 @@ export default function About() {
                         color: "white",
                         border: "none",
                       }}
+                      data-aos="slide-up" data-aos-duration="1000"
                     >
                       {" "}
-                      <Badge bg="white" square>
+                      <Badge bg="white" square="true">
                         <img
                           style={{ width: "30px", height: "30px" }}
                           src={exp}
@@ -265,9 +278,14 @@ export default function About() {
                         />
                       </Badge>
                       <div className="ms-2 me-auto">
-                        <a href="https://www.nirogh.com/" style={{color:"white"}}>
-                        <div className="fw-bold">WEB DEVELOPER INTERN</div>
-                        <span style={{fontSize:"0.9rem", color:"grey"}}>At-Axxin Diagnostics</span>
+                        <a
+                          href="https://www.nirogh.com/"
+                          style={{ color: "white" }}
+                        >
+                          <div className="fw-bold">WEB DEVELOPER INTERN</div>
+                          <span style={{ fontSize: "0.9rem", color: "grey" }}>
+                            At-Axxin Diagnostics
+                          </span>
                         </a>
                       </div>
                       <span>MAY/2023-Running</span>
@@ -281,8 +299,9 @@ export default function About() {
                         color: "white",
                         border: "none",
                       }}
+                      data-aos="slide-up" data-aos-duration="1000"
                     >
-                      <Badge bg="white" square>
+                      <Badge bg="white" square="true">
                         <img
                           style={{ width: "30px", height: "30px" }}
                           src={exp}
@@ -291,8 +310,9 @@ export default function About() {
                       </Badge>
                       <div className="ms-2 me-auto">
                         <div className="fw-bold">APP DEVELOPER</div>
-                        <span style={{fontSize:"0.9rem", color:"grey"}}>At-NIROGH GLOBAL</span>
-                        
+                        <span style={{ fontSize: "0.9rem", color: "grey" }}>
+                          At-NIROGH GLOBAL
+                        </span>
                       </div>
                       <span>MAR/2023-MAY/2023</span>
                     </ListGroup.Item>
@@ -304,7 +324,7 @@ export default function About() {
 
             <Col xs={12} sm={3} id="laptop" style={{ objectFit: "cover" }}>
               <br />
-              <Image src={anshuman} roundedCircle />
+              <Image id="float"  data-aos="zoom-in" data-aos-duration="2000" src={anshuman} roundedCircle />
             </Col>
 
             <Col xs={12} sm={6} style={{ backgroundColor: "transparent" }}>
@@ -317,6 +337,7 @@ export default function About() {
                     fontWeight: "700",
                     fontSize: "2.5rem",
                   }}
+                  data-aos="slide-down" data-aos-duration="1000"
                 >
                   <HiMinus style={{ fontSize: "2rem" }} />
                   Certification
@@ -329,9 +350,10 @@ export default function About() {
                     color: "white",
                     border: "none",
                   }}
+                  data-aos="slide-up" data-aos-duration="1000"
                 >
                   {" "}
-                  <Badge bg="white" square>
+                  <Badge bg="white" square="true">
                     <img
                       style={{ width: "30px", height: "30px" }}
                       src={cour}
@@ -340,8 +362,9 @@ export default function About() {
                   </Badge>
                   <div className="ms-2 me-auto">
                     <div className="fw-bold">WEB DEVELOPMENT</div>
-                    <span style={{fontSize:"0.9rem", color:"grey"}}>At-UDEMY</span>
-                    
+                    <span style={{ fontSize: "0.9rem", color: "grey" }}>
+                      At-UDEMY
+                    </span>
                   </div>
                   <span>FEB/2022</span>
                 </ListGroup.Item>
@@ -354,8 +377,9 @@ export default function About() {
                     color: "white",
                     border: "none",
                   }}
+                  data-aos="slide-up" data-aos-duration="1000"
                 >
-                  <Badge bg="white" square>
+                  <Badge bg="white" square="true">
                     <img
                       style={{ width: "30px", height: "30px" }}
                       src={cour}
@@ -364,7 +388,9 @@ export default function About() {
                   </Badge>
                   <div className="ms-2 me-auto">
                     <div className="fw-bold">MACHINE LEARNING</div>
-                    <span style={{fontSize:"0.9rem", color:"grey"}}>At-SILICON INSTITUTE OF TECHNOLOGY</span>
+                    <span style={{ fontSize: "0.9rem", color: "grey" }}>
+                      At-SILICON INSTITUTE OF TECHNOLOGY
+                    </span>
                   </div>
                   <span>SEP/2022</span>
                 </ListGroup.Item>
@@ -377,8 +403,9 @@ export default function About() {
                     color: "white",
                     border: "none",
                   }}
+                  data-aos="slide-up" data-aos-duration="1000"
                 >
-                  <Badge bg="white" square>
+                  <Badge bg="white" square="true">
                     <img
                       style={{ width: "30px", height: "30px" }}
                       src={cour}
@@ -387,8 +414,9 @@ export default function About() {
                   </Badge>
                   <div className="ms-2 me-auto">
                     <div className="fw-bold">ETHICAL HACKING</div>
-                    <span style={{fontSize:"0.9rem", color:"grey"}}>At-NPTEL</span>
-                    
+                    <span style={{ fontSize: "0.9rem", color: "grey" }}>
+                      At-NPTEL
+                    </span>
                   </div>
                   <span>OCT/2023</span>
                 </ListGroup.Item>
@@ -401,8 +429,9 @@ export default function About() {
                     color: "white",
                     border: "none",
                   }}
+                  data-aos="slide-up" data-aos-duration="1000"
                 >
-                  <Badge bg="white" square>
+                  <Badge bg="white" square="true">
                     <img
                       style={{ width: "30px", height: "30px" }}
                       src={cour}
@@ -411,7 +440,9 @@ export default function About() {
                   </Badge>
                   <div className="ms-2 me-auto">
                     <div className="fw-bold">UI/UX DESINING</div>
-                    <span style={{fontSize:"0.9rem", color:"grey"}}>At-UDEMY</span>
+                    <span style={{ fontSize: "0.9rem", color: "grey" }}>
+                      At-UDEMY
+                    </span>
                   </div>
                   <span>SEP/2023</span>
                 </ListGroup.Item>
@@ -427,6 +458,7 @@ export default function About() {
                     fontWeight: "700",
                     fontSize: "2.5rem",
                   }}
+                  data-aos="slide-down" data-aos-duration="1000"
                 >
                   <HiMinus style={{ fontSize: "2rem" }} />
                   Hobbies
@@ -439,9 +471,10 @@ export default function About() {
                     color: "white",
                     border: "none",
                   }}
+                  data-aos="slide-up" data-aos-duration="1000"
                 >
                   {" "}
-                  <Badge bg="white" square>
+                  <Badge bg="white" square="true">
                     <img
                       style={{ width: "30px", height: "30px" }}
                       src={hob}
@@ -461,9 +494,10 @@ export default function About() {
                     color: "white",
                     border: "none",
                   }}
+                  data-aos="slide-up" data-aos-duration="1000"
                 >
                   {" "}
-                  <Badge bg="white" square>
+                  <Badge bg="white" square="true">
                     <img
                       style={{ width: "30px", height: "30px" }}
                       src={hob}
@@ -483,9 +517,10 @@ export default function About() {
                     color: "white",
                     border: "none",
                   }}
+                  data-aos="slide-up" data-aos-duration="1000"
                 >
                   {" "}
-                  <Badge bg="white" square>
+                  <Badge bg="white" square="true">
                     <img
                       style={{ width: "30px", height: "30px" }}
                       src={hob}
@@ -505,9 +540,10 @@ export default function About() {
                     color: "white",
                     border: "none",
                   }}
+                  data-aos="slide-up" data-aos-duration="1000"
                 >
                   {" "}
-                  <Badge bg="white" square>
+                  <Badge bg="white" square="true">
                     <img
                       style={{ width: "30px", height: "30px" }}
                       src={hob}
@@ -521,40 +557,53 @@ export default function About() {
               </ListGroup>
             </Col>
             <Col xs={12} sm={12} style={{ backgroundColor: "" }}>
-              <Container className="pt-5 pb-0 mb-0" fluid style={{display:"flex",justifyContent:"center"}}>
-              <span style={{
-                  backgroundColor: "",
-                  color: "#ffc107",
-                  border: "none",
-                  fontWeight: "400",
-                  fontSize: "2rem",
-                  textAlign:"center"
-                }}>Get in Touch</span>
-              </Container>
-                
-              <Container className="pt-0 mt-0" fluid style={{display:"flex",justifyContent:"center"}}>
-              <span
-                style={{
-                  backgroundColor: "",
-                  color: "white",
-                  border: "none",
-                  fontWeight: "700",
-                  fontSize: "3.5rem",
-                  textAlign:"center"
-                }}
+              <Container
+                className="pt-5 pb-0 mb-0"
+                fluid
+                style={{ display: "flex", justifyContent: "center" }}
               >
+                <span
+                  style={{
+                    backgroundColor: "",
+                    color: "#ffc107",
+                    border: "none",
+                    fontWeight: "400",
+                    fontSize: "2rem",
+                    textAlign: "center",
+                  }}
+                  data-aos="slide-up" data-aos-duration="1000"
+                >
                 
-                Connect with Me with <br /> Confidence
-              </span>
+                  Get in Touch
+                </span>
+              </Container>
+
+              <Container
+                className="pt-0 mt-0"
+                fluid
+                style={{ display: "flex", justifyContent: "center" }}
+              >
+                <span
+                  style={{
+                    backgroundColor: "",
+                    color: "white",
+                    border: "none",
+                    fontWeight: "700",
+                    fontSize: "3.5rem",
+                    textAlign: "center",
+                  }}
+                  data-aos="slide-down" data-aos-duration="1000"
+                >
+                  Connect with Me with <br /> Confidence
+                </span>
               </Container>
             </Col>
-            
+
             <Col xs={12} sm={6} style={{ backgroundColor: "" }}>
               <br />
               <br />
-            <ListGroup className="pt-1">
-               
-            <ListGroup.Item
+              <ListGroup className="pt-1">
+                <ListGroup.Item
                   as="li"
                   className="d-flex justify-content-between align-items-start"
                   style={{
@@ -564,10 +613,33 @@ export default function About() {
                   }}
                 >
                   <div className="ms-2 me-auto">
-                    <div className="fw-bold" id="laptop" style={{fontSize:"1.4rem",color:"grey",fontWeight:"200"}}>Please fill out the form on this section <br /> to contact with me. Or call between <br /> 9:00 a.m. and 8:00 p.m. </div>
-                    <div className="fw-bold" id="phone" style={{fontSize:"1.4rem",color:"grey",fontWeight:"200"}}>Please fill out the form on this section  to contact with me. Or call between  9:00 a.m. and 8:00 p.m. </div>
+                    <div
+                      className="fw-bold"
+                      id="laptop"
+                      style={{
+                        fontSize: "1.4rem",
+                        color: "grey",
+                        fontWeight: "200",
+                      }}
+                      data-aos="slide-up" data-aos-duration="1000"
+                    >
+                      Please fill out the form on this section <br /> to contact
+                      with me. Or call between <br /> 9:00 a.m. and 8:00 p.m.{" "}
+                    </div>
+                    <div
+                      className="fw-bold"
+                      id="phone"
+                      style={{
+                        fontSize: "1.4rem",
+                        color: "grey",
+                        fontWeight: "200",
+                      }}
+                      data-aos="slide-up" data-aos-duration="1000"
+                    >
+                      Please fill out the form on this section to contact with
+                      me. Or call between 9:00 a.m. and 8:00 p.m.{" "}
+                    </div>
                   </div>
-                  
                 </ListGroup.Item>
                 <br />
                 <ListGroup.Item
@@ -578,19 +650,19 @@ export default function About() {
                     color: "white",
                     border: "none",
                   }}
+                  data-aos="slide-right" data-aos-duration="1000"
                 >
                   {" "}
-                  <Badge square  bg="white"  >
-                  {/* <LuPhoneCall style={{fontSize:"3rem",color:"violet"}} /> */}
-                  <img src={ring} alt="" />
+                  <Badge square="true" bg="white">
+                    {/* <LuPhoneCall style={{fontSize:"3rem",color:"violet"}} /> */}
+                    <img src={ring} alt="" />
                   </Badge>
-                  
                   <div className="ms-2 me-auto d-flex justify-content-start align-items-start flex-column ">
-                  <span style={{fontSize:"1rem"}}>Call Me</span>
-                    <div className="fw-bold d-flex justify-content-center align-items-center" >
+                    <span style={{ fontSize: "1rem" }}>Call Me</span>
+                    <div className="fw-bold d-flex justify-content-center align-items-center">
                       <a
                         href="tel:+91 637 020 2497"
-                        style={{ color: "white",fontSize:"1.8rem" }}
+                        style={{ color: "white", fontSize: "1.8rem" }}
                       >
                         +91 9178662419
                       </a>
@@ -606,26 +678,27 @@ export default function About() {
                     color: "white",
                     border: "none",
                   }}
+                  data-aos="slide-right" data-aos-duration="1000"
                 >
                   {" "}
-                  <Badge square  bg="white"  >
-                  {/* <LuPhoneCall style={{fontSize:"3rem",color:"violet"}} /> */}
-                  <img src={email} alt="" />
+                  <Badge square="true" bg="white">
+                    {/* <LuPhoneCall style={{fontSize:"3rem",color:"violet"}} /> */}
+                    <img src={email} alt="" />
                   </Badge>
-                  
                   <div className="ms-2 me-auto d-flex justify-content-start align-items-start flex-column ">
-                  <span style={{fontSize:"1rem"}}>Mail Me</span>
-                    <div className="fw-bold d-flex justify-content-center align-items-center" >
+                    <span style={{ fontSize: "1rem" }}>Mail Me</span>
+                    <div className="fw-bold d-flex justify-content-center align-items-center">
                       <a
                         href="mailto:anshumannayak430@gmail.com "
-                        style={{ color: "white",fontSize:"1.8rem" }}
+                        style={{ color: "white", fontSize: "1.8rem" }}
                         id="phone"
                       >
-                        anshumannayak <br />430@gmail.com
+                        anshumannayak <br />
+                        430@gmail.com
                       </a>
                       <a
                         href="mailto:anshumannayak430@gmail.com "
-                        style={{ color: "white",fontSize:"1.8rem" }}
+                        style={{ color: "white", fontSize: "1.8rem" }}
                         id="laptop"
                       >
                         anshumannayak430@gmail.com
@@ -633,7 +706,7 @@ export default function About() {
                     </div>
                   </div>
                 </ListGroup.Item>
-<br />
+                <br />
                 <ListGroup.Item
                   as="li"
                   className="d-flex justify-content-between align-items-center gap-3"
@@ -642,35 +715,32 @@ export default function About() {
                     color: "white",
                     border: "none",
                   }}
+                  data-aos="slide-right" data-aos-duration="1000"
                 >
                   {" "}
-                  <Badge square  bg="white"  >
-                  {/* <LuPhoneCall style={{fontSize:"3rem",color:"violet"}} /> */}
-                  <img src={linkdien} alt="" />
+                  <Badge square="true" bg="white">
+                    {/* <LuPhoneCall style={{fontSize:"3rem",color:"violet"}} /> */}
+                    <img src={linkdien} alt="" />
                   </Badge>
-                  
                   <div className="ms-2 me-auto d-flex justify-content-start align-items-start flex-column ">
-                  <span style={{fontSize:"1rem"}}>Reach Me</span>
-                    <div className="fw-bold d-flex justify-content-center align-items-center" >
+                    <span style={{ fontSize: "1rem" }}>Reach Me</span>
+                    <div className="fw-bold d-flex justify-content-center align-items-center">
                       <a
                         href="https://www.linkedin.com/in/anshuman-nayak-402a571b9/"
-                        style={{ color: "white",fontSize:"1.8rem" }}
+                        style={{ color: "white", fontSize: "1.8rem" }}
                       >
                         anshuman-nayak
                       </a>
                     </div>
                   </div>
                 </ListGroup.Item>
-                
-                
               </ListGroup>
-
             </Col>
 
             <Col xs={12} sm={6} style={{ backgroundColor: "" }}>
               <br />
               <br />
-            <Contact />
+              <Contact />
             </Col>
           </Row>
         </Container>

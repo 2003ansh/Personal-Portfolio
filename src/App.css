@@ -20,6 +20,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 html {
@@ -94,12 +95,14 @@ p.danger {
 }
 /************ Navbar Css ************/
 nav.navbar {
-  padding: 18px 0;
+  padding: 0px 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 9999;
   transition: 0.32s ease-in-out;
+  background: rgba(24, 23, 23, 0.144);
+  backdrop-filter: blur(5px);
 }
 nav.navbar.scrolled {
   padding: 0px 0;
@@ -113,7 +116,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   color: #fff !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
-  font-size: 18px;
+  font-size: 20px;
   opacity: 0.75;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
@@ -315,6 +318,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 @keyframes updown {
   0% {
     transform: translateY(-20px);
+    
   }
   50% {
     transform: translateY(20px);
@@ -323,6 +327,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     transform: translateY(-20px);
   }
 }
+
+#float{
+  animation: updown 3s linear infinite;
+  
+}
+
+
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
@@ -485,6 +496,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 24px;
   transition: 0.4s ease-in-out;
   cursor: pointer;
+  /* border: 2px solid rgba(255, 255, 255, 0.5); */
+  box-shadow: 0 0 0px 0px #48abe0,
+              0 0 2px 2px #ebecca,
+              0 0 4px 4px #8a2be2,
+              0 0 4px 4px #ff1493;
 }
 .proj-imgbx::before {
   content: "";
@@ -517,6 +533,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
+  /* color: white; */
+ text-shadow: rebeccapurple 0 0 10px;
+}
+#any{
+  /* color: white; */
+  text-shadow: rgb(96, 5, 119) 0px 0px 25px;
+  /* padding: 10rem; */
+  background-color: transparent;
 }
 .proj-txtx span {
   font-style: italic;
@@ -717,6 +741,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .dis{
   display: flex;
   justify-content: center;
+}
+.shad{
+  box-shadow: 0 0 0px 0px #48abe0,
+  0 0 2px 2px #ebecca,
+  0 0 4px 4px #8a2be2,
+  0 0 4px 4px #ff1493;
 }
 @media screen and (max-width: 991px) {
   #phone {
