@@ -87,9 +87,11 @@ export default function Navigation() {
               <a href="tel:+91 9178662419"><img src={navIcon3} alt="Icon" /></a>
               </div>
               {/* <HashLink to='#connect'> */}
+              <a href=" https://wa.me/918895006898?text=Let's Connect">
               <button className="vvd">
                 <span>Let’s Connect</span>
               </button>
+              </a>
               {/* </HashLink> */}
             </span>
           </Navbar.Collapse>
