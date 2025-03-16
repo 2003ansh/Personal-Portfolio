@@ -25,7 +25,8 @@ export default function About() {
   const handleDownload = () => {
     // Replace 'path/to/your/file.pdf' with the actual path to your PDF file.
     const pdfPath =
-      "https://drive.google.com/file/d/1WPW0RuvPdIHDJBIelbo9mzpckKfGzgfq/view?usp=sharing";
+      // "https://drive.google.com/file/d/1WPW0RuvPdIHDJBIelbo9mzpckKfGzgfq/view?usp=sharing";
+      'https://drive.google.com/file/d/1PuP8c_SG8uzieRGHgtlsMXBLF6E_lMap/view?usp=sharing'
 
     // Create a temporary link element
     const link = document.createElement("a");
@@ -259,6 +260,38 @@ export default function About() {
                       <HiMinus style={{ fontSize: "2rem" }} />
                       Experience
                     </ListGroup.Item>
+                    <ListGroup.Item
+                      as="li"
+                      className="d-flex justify-content-between align-items-start"
+                      style={{
+                        backgroundColor: "transparent",
+                        color: "white",
+                        border: "none",
+                      }}
+                      data-aos="slide-up" data-aos-duration="1000"
+                    >
+                      {" "}
+                      <Badge bg="white" square="true">
+                        <img
+                          style={{ width: "30px", height: "30px" }}
+                          src={exp}
+                          alt=""
+                        />
+                      </Badge>
+                      <div className="ms-2 me-auto">
+                        <a
+                          href="https://www.nirogh.com/"
+                          style={{ color: "white" }}
+                        >
+                          <div className="fw-bold">SOFTWARE DEVELOPER INTERN</div>
+                          <span style={{ fontSize: "0.9rem", color: "grey" }}>
+                            At-Haber (Elixa Technologies Private Limited), Pune
+                          </span>
+                        </a>
+                      </div>
+                      <span>JUNE/2024-Running</span>
+                    </ListGroup.Item>
+                    <br />
                     <ListGroup.Item
                       as="li"
                       className="d-flex justify-content-between align-items-start"

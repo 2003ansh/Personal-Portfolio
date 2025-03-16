@@ -17,6 +17,14 @@ export default function Project() {
       Url: "#",
     },
     {
+      title: "Nirogh Company Official Website",
+      description: "Design & Development",
+      techStack: "React, Node.js, Express.js, MongoDB, JWT, Bcrypt,Emailjs",
+      imgUrl: projImg4,
+      github: "",
+      Url: "https://nirogh.com/",
+    },
+    {
       title: "Text Analyser Webapp",
       description: "Analyse your text ar ease",
       techStack: "React, react-bootstrap, Particles.js,rapiAPI",
@@ -45,14 +53,7 @@ export default function Project() {
       github: "https://github.com/2003ansh/STL",
       Url: "#",
     },
-    {
-      title: "Nirogh Company Official Website",
-      description: "Design & Development",
-      techStack: "React, Node.js, Express.js, MongoDB, JWT, Bcrypt,Emailjs",
-      imgUrl: projImg4,
-      github: "",
-      Url: "https://nirogh.com/",
-    },
+    
     {
       title: "Todo App",
       description: "Manage your tasks with ease",

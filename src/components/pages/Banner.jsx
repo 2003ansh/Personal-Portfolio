@@ -5,7 +5,8 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
-
+import header from "../../assets/img/newbg.svg";
+import bg1 from "../../assets/img/bg1.svg";
 export default function Banner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -127,9 +128,9 @@ export default function Banner() {
             </div>
           </Col>
 
-          <Col xs={12} md={6} xl={5} className="pt-5">
-            <div data-aos="zoom-in" data-aos-duration="2000" >
-              <img  src={headerImg} alt="Header Img" />
+          <Col xs={12} md={6} xl={5} className="pt-0">
+            <div data-aos="zoom-in" data-aos-duration="2000" className="pt-0" >
+              <img  src={bg1}  alt="Header Img" />
             </div>
           </Col>
         </Row>

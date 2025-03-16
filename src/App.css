@@ -246,6 +246,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Banner Css ************/
+.headimg{
+  background-image: url("./assets/img/bg2.svg");
+  width: 600px;
+  height: 600px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .phonebanner {
   display: none;
 }
@@ -315,6 +322,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   animation: updown 3s linear infinite;
+  /* width: 500px; */
 }
 @keyframes updown {
   0% {

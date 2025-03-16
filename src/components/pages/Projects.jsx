@@ -7,7 +7,7 @@ import projImg1 from "../../assets/img/port.png";
 import projImg2 from "../../assets/img/text.png";
 import projImg3 from "../../assets/img/health.png";
 import projImg4 from "../../assets/img/nirogh.png";
-import projImg5 from "../../assets/img/todo.png";
+import projImg5 from "../../assets/img/webapp.png";
 import projImg6 from "../../assets/img/erp.png";
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 import intern1 from "../../assets/img/internship1.png";
@@ -20,6 +20,17 @@ export default function Projects() {
       description: "Showcasing my work",
       imgUrl: projImg1,
     },
+    
+    {
+      title: "Nirogh Company Official Website",
+      description: "Design & Development",
+      imgUrl: projImg4,
+    },
+    {
+      title: "Web APP for NIROGH",
+      description: "Book tests online",
+      imgUrl: projImg5,
+    },
     {
       title: "Text Analyser",
       description: "Analyse your text ar ease",
@@ -30,16 +41,7 @@ export default function Projects() {
       description: "Track your Calorie Intake",
       imgUrl: projImg3,
     },
-    {
-      title: "Nirogh Company Official Website",
-      description: "Design & Development",
-      imgUrl: projImg4,
-    },
-    {
-      title: "Todo App",
-      description: "Manage your tasks with ease",
-      imgUrl: projImg5,
-    },
+   
   ];
   return (
     <>
