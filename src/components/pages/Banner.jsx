@@ -59,8 +59,18 @@ export default function Banner() {
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7} className="laptopbanner">
             <div>
-              <span className="tagline" data-aos="fade-down-right" data-aos-duration="1000">Welcome to my Portfolio</span>
-              <h1 style={{ fontSize: '3.6rem' }} data-aos="zoom-in" data-aos-duration="2000">
+              <span
+                className="tagline"
+                data-aos="fade-down-right"
+                data-aos-duration="1000"
+              >
+                Welcome to my Portfolio
+              </span>
+              <h1
+                style={{ fontSize: "3.6rem" }}
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+              >
                 {" "}
                 Hi! I'm Anshuman a <br />{" "}
                 <TypeAnimation
@@ -77,15 +87,20 @@ export default function Banner() {
                   ]}
                   wrapper="span"
                   speed={50}
-                  //   
+                  //
                   repeat={Infinity}
                 />
               </h1>
               <p data-aos="slide-right" data-aos-duration="1000">
-              I am a qualified and professional full-stack web developer with
-              two-year track record in Database Administration and Website Design. Adept at creating efficient web applications, I bring creativity and analytical prowess to my work. As a team player with a keen eye for detail, I consistently exceed project expectations. Proficient in various programming languages and frameworks, I excel in dynamic environments.”
+                I am a qualified and professional full-stack web developer with
+                two-years of experience in Website Design. Adept at creating
+                efficient web applications, I bring creativity and analytical
+                prowess to my work. As a team player with a keen eye for detail,
+                I consistently exceed project expectations. Proficient in
+                various programming languages and frameworks, I excel in dynamic
+                environments.
               </p>
-              <button  onClick={() => console.log("connect")}>
+              <button onClick={() => console.log("connect")}>
                 Let’s Connect <ArrowRightCircle size={25} />
               </button>
             </div>
@@ -95,8 +110,23 @@ export default function Banner() {
             <div>
               <br />
               <br />
-              <span className="tagline " data-aos="slide-down" data-aos-duration="1000">Welcome to my Portfolio</span>
-              <h2 id="any" data-aos="zoom-in" data-aos-duration="2000" style={{ fontSize: '2.1rem', display: 'inline-block',fontWeight:"700" }}>
+              <span
+                className="tagline "
+                data-aos="slide-down"
+                data-aos-duration="1000"
+              >
+                Welcome to my Portfolio
+              </span>
+              <h2
+                id="any"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+                style={{
+                  fontSize: "2.1rem",
+                  display: "inline-block",
+                  fontWeight: "700",
+                }}
+              >
                 {" "}
                 Hi! I'm Anshuman a <br />
                 <TypeAnimation
@@ -113,14 +143,22 @@ export default function Banner() {
                   ]}
                   wrapper="span"
                   speed={50}
-                    
                   repeat={Infinity}
                 />
               </h2>
-            
-              <p data-aos="slide-left" data-aos-duration="1000" style={{ fontSize: '1rem', display: 'inline-block' }}>
-              I am a qualified and professional full-stack web developer with
-              two-year track record in Database Administration and Website Design. Adept at creating efficient web applications, I bring creativity and analytical prowess to my work. As a team player with a keen eye for detail, I consistently exceed project expectations. Proficient in various programming languages and frameworks, I excel in dynamic environments.”
+
+              <p
+                data-aos="slide-left"
+                data-aos-duration="1000"
+                style={{ fontSize: "1rem", display: "inline-block" }}
+              >
+                I am a qualified and professional full-stack web developer with
+                two-year track record in Database Administration and Website
+                Design. Adept at creating efficient web applications, I bring
+                creativity and analytical prowess to my work. As a team player
+                with a keen eye for detail, I consistently exceed project
+                expectations. Proficient in various programming languages and
+                frameworks, I excel in dynamic environments.”
               </p>
               <button onClick={() => console.log("connect")}>
                 Let’s Connect <ArrowRightCircle size={25} />
@@ -129,8 +167,8 @@ export default function Banner() {
           </Col>
 
           <Col xs={12} md={6} xl={5} className="pt-0">
-            <div data-aos="zoom-in" data-aos-duration="2000" className="pt-0" >
-              <img  src={bg1}  alt="Header Img" />
+            <div data-aos="zoom-in" data-aos-duration="2000" className="pt-0">
+              <img src={bg1} alt="Header Img" />
             </div>
           </Col>
         </Row>
