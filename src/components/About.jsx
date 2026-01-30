@@ -11,7 +11,7 @@ import {
 } from "react-bootstrap";
 // import simpleParallax from "simple-parallax-js";
 // import { LuPhoneCall } from "react-icons/lu";
-import anshuman from "../assets/img/anshuman.jpeg";
+import anshuman from "../assets/img/anshuman.png";
 import edu from "../assets/img/edu.gif";
 import exp from "../assets/img/exp.gif";
 import cour from "../assets/img/cour.gif";
@@ -26,8 +26,7 @@ export default function About() {
     // Replace 'path/to/your/file.pdf' with the actual path to your PDF file.
     const pdfPath =
       // "https://drive.google.com/file/d/1WPW0RuvPdIHDJBIelbo9mzpckKfGzgfq/view?usp=sharing";
-      'https://drive.google.com/file/d/1PuP8c_SG8uzieRGHgtlsMXBLF6E_lMap/view?usp=sharing'
-
+      'https://drive.google.com/file/d/1XI96-HjH8-4VoeBk_8bCd_284imlIo6E/view?usp=sharing'
     // Create a temporary link element
     const link = document.createElement("a");
 
@@ -283,13 +282,45 @@ export default function About() {
                           href="https://www.nirogh.com/"
                           style={{ color: "white" }}
                         >
+                          <div className="fw-bold">JUNIOR SOFTWARE DEVELOPER</div>
+                          <span style={{ fontSize: "0.9rem", color: "grey" }}>
+                            At-Haber (Elixa Technologies Private Limited), Pune
+                          </span>
+                        </a>
+                      </div>
+                      <span>May/2025 - Present</span>
+                    </ListGroup.Item>
+                    <br />
+                    <ListGroup.Item
+                      as="li"
+                      className="d-flex justify-content-between align-items-start"
+                      style={{
+                        backgroundColor: "transparent",
+                        color: "white",
+                        border: "none",
+                      }}
+                      data-aos="slide-up" data-aos-duration="1000"
+                    >
+                      {" "}
+                      <Badge bg="white" square="true">
+                        <img
+                          style={{ width: "30px", height: "30px" }}
+                          src={exp}
+                          alt=""
+                        />
+                      </Badge>
+                      <div className="ms-2 me-auto">
+                        <a
+                          href="https://www.nirogh.com/"
+                          style={{ color: "white" }}
+                        >
                           <div className="fw-bold">SOFTWARE DEVELOPER INTERN</div>
                           <span style={{ fontSize: "0.9rem", color: "grey" }}>
                             At-Haber (Elixa Technologies Private Limited), Pune
                           </span>
                         </a>
                       </div>
-                      <span>JUNE/2024-Running</span>
+                      <span>JUNE/2024-May/2025</span>
                     </ListGroup.Item>
                     <br />
                     <ListGroup.Item
@@ -321,7 +352,7 @@ export default function About() {
                           </span>
                         </a>
                       </div>
-                      <span>MAY/2023-Running</span>
+                      <span>MAY/2023-JUNE/2024</span>
                     </ListGroup.Item>
                     <br />
                     <ListGroup.Item
